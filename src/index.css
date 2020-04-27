@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('./fonts/Raleway/raleway-regular-webfont.woff2') format('woff2'),
+    url('./fonts/Raleway/raleway-regular-webfont.woff') format('woff'),
+    url('./fonts/Raleway/raleway-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --colorfirst: #1fab89;
+    --colorsecond: #62d2a2;
+    --colorthird: #9df3c4;
+    --colorfourth: #d7fbe8;
+    --colorfifth: #ad0031;
+}
+
+html, body {
+    font-family: ralewayregular, sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+html {;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

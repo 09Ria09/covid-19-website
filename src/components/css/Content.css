@@ -1,0 +1,35 @@
+.content {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: center;
+}
+
+.content > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: auto;
+    padding: 0 20px;
+    width: 40%;
+}
+
+.content > div > article {
+    margin: auto;
+    text-align: justify;
+}
+
+.contentTypeA {
+    background-color: var(--colorsecond);
+    border-bottom-color: var(--colorfirst);
+    border-bottom-style: ridge;
+    border-bottom-width: 50px;
+    border-top-color: var(--colorfirst);
+    border-top-style: groove;
+    border-top-style: none;
+    border-top-width: 50px;
+}
+
+.contentTypeA > div {
+    background-color: var(--colorfourth);
+}

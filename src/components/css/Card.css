@@ -1,0 +1,38 @@
+.card {
+    background-color: ghostwhite;
+    border: lightgrey solid 1px;
+    border-bottom: var(--colorfifth) solid 4px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: var(--colorfifth);
+    font-family: inherit;
+    font-size: inherit;
+    height: 300px;
+    margin: auto 20px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: inherit;
+    transition-duration: 250ms;
+    width: 260px;
+    user-select: none;
+}
+
+.card:hover {
+    border: lightgrey solid 1px;
+    box-shadow: inset 0px 0px 65px 35px rgba(255, 255, 255, 1);
+    transform: translateY(4px);
+}
+
+.card:active {
+    transition-duration: 75ms;
+    background-color: var(--colorfifth);
+    border-color: var(--colorfifth);
+    box-shadow: none;
+    color: ghostwhite;
+}
+
+.cardIcon {
+    height: 75px;
+    margin: 20px 0 40px 0;
+    width: auto;
+}

@@ -1,0 +1,27 @@
+#cardHolder {
+    background-color: var(--colorsecond);
+    bottom: 0;
+    display: flex;
+    height: 220px;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+
+#cardHolder>.card{
+    margin-top: -150px;
+}
+
+#cardHolder > p {
+    bottom: 0;
+    color: #1ffbe0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+#cardHolder > p > span {
+    font-size: 1.5rem;
+}

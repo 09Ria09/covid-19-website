@@ -1,0 +1,30 @@
+#start {
+    /*
+    background: #1fc8db linear-gradient(141deg, #8ef6e4 32.5%, #9896f1 60%, #d59bf6 82.5%, #edb1f1 100%);
+    background: linear-gradient(-141deg, #d7fbe8 0%, #1fc8db 51%, #2cb5e8 75%) fixed;
+    */
+    background: var(--colorfirst) url('../../images/background-tile(1).png') fixed;
+    box-sizing: border-box;
+    color: var(--colorfifth);
+    height: 100vh;
+    padding-top: 20vh;
+    position: relative;
+    scroll-snap-align: center;
+}
+
+#start > h1 {
+    font-size: 70px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#start > ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#start > ul > li > h2 {
+    font-size: 30px;
+    margin: 0;
+}

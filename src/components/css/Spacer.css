@@ -1,0 +1,11 @@
+.spacer {
+    height: 40vh;
+    width: 100%;
+}
+
+.spacerTypeA {
+    /*
+    background: #1fc8db linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%) fixed;
+     */
+    background: var(--colorfirst) url('../../images/background-tile(1).png') fixed;
+}
