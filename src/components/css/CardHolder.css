@@ -9,19 +9,23 @@
     right: 0;
 }
 
-#cardHolder>.card{
+#cardHolder > .card {
     margin-top: -150px;
 }
 
-#cardHolder > p {
-    bottom: 0;
-    color: #1ffbe0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-}
+@media (max-width: 999px) {
+    #cardHolder {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        position: unset;
+    }
 
-#cardHolder > p > span {
-    font-size: 1.5rem;
+    #cardHolder > .card {
+        margin: 20px auto;
+    }
+
+    #cardHolder > p {
+        display: none;
+    }
 }

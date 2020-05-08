@@ -1,8 +1,7 @@
 import React from "react";
-import "./Start"
+import "./HomeStart"
 import "./CardHolder"
-import Start from "./Start";
-import Spacer from "./Spacer";
+import HomeStart from "./HomeStart";
 import Content from "./Content";
 import Footer from "./Footer";
 
@@ -11,8 +10,7 @@ class Home extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Start/>
-                <Spacer type={'a'}/>
+                <HomeStart/>
                 <Content type={'a'}>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae velit elit. Nunc volutpat
                         dui sed justo tristique, sit amet molestie sapien elementum. Nunc quam libero, efficitur eu
@@ -29,7 +27,6 @@ class Home extends React.Component {
                         Donec id erat id elit consequat mattis sed rutrum purus. Maecenas et dictum erat. Cras quis
                         mollis turpis, eget maximus felis.</p>
                 </Content>
-                <Spacer type={'a'}/>
                 <Content type={'a'}>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae velit elit. Nunc volutpat
                         dui sed justo tristique, sit amet molestie sapien elementum. Nunc quam libero, efficitur eu
@@ -46,7 +43,6 @@ class Home extends React.Component {
                         Donec id erat id elit consequat mattis sed rutrum purus. Maecenas et dictum erat. Cras quis
                         mollis turpis, eget maximus felis.</p>
                 </Content>
-                <Spacer type={'a'}/>
                 <Content type={'a'}>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae velit elit. Nunc volutpat
                         dui sed justo tristique, sit amet molestie sapien elementum. Nunc quam libero, efficitur eu
@@ -63,7 +59,6 @@ class Home extends React.Component {
                         Donec id erat id elit consequat mattis sed rutrum purus. Maecenas et dictum erat. Cras quis
                         mollis turpis, eget maximus felis.</p>
                 </Content>
-                <Spacer type={'a'}/>
                 <Footer/>
             </React.Fragment>
         );

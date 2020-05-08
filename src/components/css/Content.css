@@ -1,16 +1,23 @@
+.contentContainer {
+    background: var(--colorfirst) url('../../images/background-tile(1).png') fixed;
+    box-sizing: border-box;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
 .content {
     box-sizing: border-box;
     height: 100vh;
     width: 100%;
-    scroll-snap-align: center;
 }
 
 .content > div {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     height: 100%;
     margin: auto;
-    padding: 0 20px;
+    padding: 50px 20px 0 20px;
     width: 40%;
 }
 
@@ -21,15 +28,29 @@
 
 .contentTypeA {
     background-color: var(--colorsecond);
-    border-bottom-color: var(--colorfirst);
-    border-bottom-style: ridge;
-    border-bottom-width: 50px;
-    border-top-color: var(--colorfirst);
-    border-top-style: groove;
-    border-top-style: none;
-    border-top-width: 50px;
+    /** border-top-style: groove; **/
+    border-bottom: 50px ridge var(--colorfirst);
+    border-top: 50px none var(--colorfirst);
 }
 
 .contentTypeA > div {
     background-color: var(--colorfourth);
+}
+
+@media (max-width: 999px) {
+    .contentContainer {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .content {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .content > div {
+        max-width: 600px;
+        min-height: calc(100vh - 50px);
+        width: 100%;
+    }
 }

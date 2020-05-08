@@ -12,7 +12,7 @@ class Header extends React.Component {
     }
 
     componentDidMount() {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
     }
 
     render() {
@@ -23,16 +23,29 @@ class Header extends React.Component {
                     onLeave={() => this.setState({hide: false})}
                 />
                 </span>
-                <header className={(this.state.hide === true? 'hideHeader ' : 'showHeader ')}><NavLink id={'title'} to="/">
+                <header className={(this.state.hide === true ? 'hideHeader ' : 'showHeader ')}><NavLink id={'title'}
+                                                                                                        activeClassName={'currentPage'}
+                                                                                                        to="/"
+                                                                                                        isActive={this.checkHomeIsActive}>
                     <h1>COVID-19</h1></NavLink>
                     <div style={{'flexGrow': '1'}}/>
                     <ul id={'links'}>
-                        <li className={'link'}><NavLink to="/lorem"><span>Lorem</span></NavLink></li>
-                        <li className={'link'}><NavLink to="/card-holder"><span>Ipsum</span></NavLink></li>
+                        <li className={'link'}><NavLink activeClassName={'currentPage'}
+                                                        to="/lorem"><span>Lorem</span></NavLink></li>
+                        <li className={'link'}><NavLink activeClassName={'currentPage'}
+                                                        to="/card-holder"><span>Ipsum</span></NavLink></li>
                     </ul>
                 </header>
             </React.Fragment>
         );
+    }
+
+    checkHomeIsActive(match, location) {
+        //some additional logic to verify you are in the home URI
+        if (!location) return false;
+        const {pathname} = location;
+        console.log(pathname);
+        return pathname === "/";
     }
 }
 

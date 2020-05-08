@@ -1,8 +1,9 @@
 import React from "react";
 import "../css/CardHolder.css"
 import Card from "./Card";
-import {FaRegMeh, FaRegNewspaper, FaWheelchair} from 'react-icons/fa'
+import {FaRegMeh, FaRegNewspaper} from 'react-icons/fa'
 import {GiVirus} from 'react-icons/gi'
+import MoreInfoDown from "./MoreInfoDown";
 
 class CardHolder extends React.Component {
 
@@ -31,7 +32,7 @@ class CardHolder extends React.Component {
                     <p>lorem ipsum dollar sit amet</p>
                 </Card>
                 <div style={{'flexGrow': '1'}}/>
-                <p><span>⮟</span> da mai in jos pentru mai multe informatii despre COVID-19 <span>⮟</span></p>
+                <MoreInfoDown/>
             </section>
         );
     }

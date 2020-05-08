@@ -21,15 +21,21 @@ html, body {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
 }
 
-html {;
+html {
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
     scroll-snap-type: y mandatory;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media (max-width: 999px) {
+    html {
+        scroll-snap-type: none;
+    }
 }
