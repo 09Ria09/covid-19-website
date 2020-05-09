@@ -9,3 +9,12 @@
     position: fixed;
     top: 0;
 }
+
+.width100vw {
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.displayNone{
+    display: none;
+}

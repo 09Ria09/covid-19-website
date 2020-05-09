@@ -70,11 +70,6 @@ header {
     transition-timing-function: ease-in-out;
 }
 
-#headerWaypointContainer {
-    bottom: 220px;
-    position: absolute;
-}
-
 @media (min-width: 1000px) {
 
     #title:hover, .link > a:hover {

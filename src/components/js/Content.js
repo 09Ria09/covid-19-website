@@ -6,8 +6,8 @@ class Content extends React.Component {
 
     render() {
         return (
-            <div className={'contentContainer'}>
-                <ScrollAnimation animateIn={'zoomIn'} animateOut={'zoomOut'} duration={0.4}>
+            <div className={'contentContainer'} style={this.props.style}>
+                <ScrollAnimation animateIn={'zoomIn'} animateOnce={true} duration={0.4}>
                     <div
                         className={'content ' + (this.props.type === 'a' ? 'contentTypeA ' : '') + (this.props.type === 'b' ? 'contentTypeB ' : '')}
                         style={this.props.outerStyle}>

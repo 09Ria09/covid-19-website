@@ -19,6 +19,7 @@
     margin: auto;
     padding: 50px 20px 0 20px;
     width: 40%;
+    min-width: 600px;
 }
 
 .content > div > article {
@@ -50,6 +51,7 @@
 
     .content > div {
         max-width: 600px;
+        min-width: unset;
         min-height: calc(100vh - 50px);
         width: 100%;
     }

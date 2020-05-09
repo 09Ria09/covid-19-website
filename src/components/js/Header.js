@@ -1,28 +1,28 @@
 import React from "react";
 import "../css/Header.css";
-import {NavLink} from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 import {Waypoint} from 'react-waypoint';
 
 class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            hide: true,
+            hide: false,
         }
     }
 
     componentDidMount() {
-        window.scrollTo(0, 0);
+        setTimeout(() => window.scrollY > 80 * window.innerHeight / 100?this.setState({hide: false}):'', 100);
     }
 
     render() {
         return (
             <React.Fragment>
-                <span id={'headerWaypointContainer'}><Waypoint
-                    onEnter={() => this.setState({hide: true})}
+                {/*<span id={'headerWaypointContainer'}><Waypoint
+                    onEnter={() => window.location.pathname==='/'?this.setState({hide: true}):''}
                     onLeave={() => this.setState({hide: false})}
                 />
-                </span>
+                </span>*/}
                 <header className={(this.state.hide === true ? 'hideHeader ' : 'showHeader ')}><NavLink id={'title'}
                                                                                                         activeClassName={'currentPage'}
                                                                                                         to="/"
@@ -31,9 +31,9 @@ class Header extends React.Component {
                     <div style={{'flexGrow': '1'}}/>
                     <ul id={'links'}>
                         <li className={'link'}><NavLink activeClassName={'currentPage'}
-                                                        to="/lorem"><span>Lorem</span></NavLink></li>
+                                                        to="./Article1"><span>Informații</span></NavLink></li>
                         <li className={'link'}><NavLink activeClassName={'currentPage'}
-                                                        to="/card-holder"><span>Ipsum</span></NavLink></li>
+                                                        to="/Article8"><span>FAQ</span></NavLink></li>
                     </ul>
                 </header>
             </React.Fragment>
@@ -44,7 +44,6 @@ class Header extends React.Component {
         //some additional logic to verify you are in the home URI
         if (!location) return false;
         const {pathname} = location;
-        console.log(pathname);
         return pathname === "/";
     }
 }

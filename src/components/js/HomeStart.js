@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/HomeStart.css";
-import CardHolder from "./CardHolder";
 import MoreInfoDown from "./MoreInfoDown";
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -16,8 +15,7 @@ class HomeStart extends React.Component {
 
     render() {
         return (
-            <article id={'start'}>
-                <div className={'startText'}>
+            <article className={'homeStart'}>
                     <h1>COVID-19 in Romania</h1>
                     <ScrollAnimation className={'startText'} animateIn={'zoomIn'} animateOnce={true} delay={400}
                                      duration={1}>
@@ -27,9 +25,7 @@ class HomeStart extends React.Component {
                             <li><h2>Morti: {this.state.COVID19.deaths}</h2></li>
                         </ul>
                     </ScrollAnimation>
-                    <MoreInfoDown/>
-                </div>
-                <CardHolder/>
+                <MoreInfoDown> Articole </MoreInfoDown>
             </article>
         );
     }

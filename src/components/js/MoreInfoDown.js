@@ -21,7 +21,7 @@ class MoreInfoDown extends React.Component {
             marginRight: '4px',
         };
         return (
-            <p style={pStyle}><span style={spanStyle}/> Mai multe informatii despre COVID-19 <span style={spanStyle}/>
+            <p style={pStyle}><span style={spanStyle}/> {this.props.children} <span style={spanStyle}/>
             </p>
         );
     }

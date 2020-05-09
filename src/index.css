@@ -29,6 +29,10 @@ html {
     scroll-snap-type: y mandatory;
 }
 
+body{
+    background: #14725b;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
