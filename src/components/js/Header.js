@@ -1,7 +1,6 @@
 import React from "react";
 import "../css/Header.css";
-import {NavLink, useLocation} from "react-router-dom";
-import {Waypoint} from 'react-waypoint';
+import {NavLink} from "react-router-dom";
 
 class Header extends React.Component {
     constructor(props) {
@@ -12,7 +11,7 @@ class Header extends React.Component {
     }
 
     componentDidMount() {
-        setTimeout(() => window.scrollY > 80 * window.innerHeight / 100?this.setState({hide: false}):'', 100);
+        setTimeout(() => window.scrollY > 80 * window.innerHeight / 100 ? this.setState({hide: false}) : '', 100);
     }
 
     render() {

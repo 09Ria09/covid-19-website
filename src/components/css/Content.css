@@ -1,6 +1,7 @@
 .contentContainer {
     background: var(--colorfirst) url('../../images/background-tile(1).png') fixed;
     box-sizing: border-box;
+    font-size: 1.1em;
     height: 100vh;
     scroll-snap-align: center;
 }
@@ -17,9 +18,10 @@
     flex-direction: column;
     height: 100%;
     margin: auto;
+    min-width: 800px;
+    overflow: auto;
     padding: 50px 20px 0 20px;
     width: 40%;
-    min-width: 600px;
 }
 
 .content > div > article {
@@ -38,6 +40,12 @@
     background-color: var(--colorfourth);
 }
 
+@media (max-width: 1459px) {
+    .content > div {
+        min-width: 600px;
+    }
+}
+
 @media (max-width: 999px) {
     .contentContainer {
         height: auto;
@@ -51,8 +59,8 @@
 
     .content > div {
         max-width: 600px;
-        min-width: unset;
         min-height: calc(100vh - 50px);
+        min-width: unset;
         width: 100%;
     }
 }

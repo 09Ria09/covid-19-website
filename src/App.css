@@ -10,11 +10,11 @@
     top: 0;
 }
 
-.width100vw {
+.width100 {
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
 }
 
-.displayNone{
+.displayNone {
     display: none;
 }

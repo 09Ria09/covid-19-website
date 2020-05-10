@@ -16,15 +16,15 @@ class HomeStart extends React.Component {
     render() {
         return (
             <article className={'homeStart'}>
-                    <h1>COVID-19 in Romania</h1>
-                    <ScrollAnimation className={'startText'} animateIn={'zoomIn'} animateOnce={true} delay={400}
-                                     duration={1}>
-                        <ul>
-                            <li><h2>Cazuri: {this.state.COVID19.cases}</h2></li>
-                            <li><h2>Vindecati: {this.state.COVID19.recovered}</h2></li>
-                            <li><h2>Morti: {this.state.COVID19.deaths}</h2></li>
-                        </ul>
-                    </ScrollAnimation>
+                <h1>COVID-19 in Romania</h1>
+                <ScrollAnimation className={'startText'} animateIn={'zoomIn'} animateOnce={true} delay={400}
+                                 duration={1}>
+                    <ul>
+                        <li><h2>Cazuri: {this.state.COVID19.cases}</h2></li>
+                        <li><h2>Vindecati: {this.state.COVID19.recovered}</h2></li>
+                        <li><h2>Morti: {this.state.COVID19.deaths}</h2></li>
+                    </ul>
+                </ScrollAnimation>
                 <MoreInfoDown> Articole </MoreInfoDown>
             </article>
         );

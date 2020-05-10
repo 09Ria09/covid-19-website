@@ -7,15 +7,15 @@
     box-sizing: border-box;
     color: var(--colorfifth);
     height: 100vh;
-    padding-top: 30vh;
     padding-left: 15vw;
     padding-right: 15vw;
+    padding-top: calc(75px + 28vh);
     position: relative;
     scroll-snap-align: center;
 }
 
 .start > h1 {
-    font-size: 50px;
+    font-size: 45px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 0;
@@ -32,9 +32,34 @@
 
 @media (max-width: 999px) {
 
+    .start {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: calc(75px + 18vh);
+    }
+
     .start > h1 {
         font-size: 40px;
-        margin-top: 0;
-        text-align: center;
+    }
+
+    .start > h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .start {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: calc(75px + 8vh);
+    }
+
+    .start > h1 {
+        font-size: 35px;
+    }
+
+    .start > h3 {
+        font-size: 20px;
     }
 }

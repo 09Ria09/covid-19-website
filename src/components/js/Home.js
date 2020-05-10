@@ -12,7 +12,7 @@ class Home extends React.Component {
             <React.Fragment>
                 <HomeStart/>
                 <CardHolder/>
-                <Footer style={{scrollSnapAlign:'unset'}}/>
+                <Footer style={{scrollSnapAlign: 'unset'}}/>
             </React.Fragment>
         );
     }

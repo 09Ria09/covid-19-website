@@ -20,6 +20,18 @@ import Article11 from "./components/js/Article11";
 import Article12 from "./components/js/Article12";
 import Article13 from "./components/js/Article13";
 import Article14 from "./components/js/Article14";
+import Article15 from "./components/js/Article15";
+import Article16 from "./components/js/Article16";
+import Article17 from "./components/js/Article17";
+import Article18 from "./components/js/Article18";
+import Article19 from "./components/js/Article19";
+import Article20 from "./components/js/Article20";
+import Article21 from "./components/js/Article21";
+import Article22 from "./components/js/Article22";
+import Article23 from "./components/js/Article23";
+import Article24 from "./components/js/Article24";
+import Article25 from "./components/js/Article25";
+import Article26 from "./components/js/Article26";
 
 const routes = [
     {path: '/', name: 'Home', Component: Home},
@@ -37,6 +49,18 @@ const routes = [
     {path: '/Article12', name: 'Articolul 12', Component: Article12},
     {path: '/Article13', name: 'Articolul 13', Component: Article13},
     {path: '/Article14', name: 'Articolul 14', Component: Article14},
+    {path: '/Article15', name: 'Articolul 15', Component: Article15},
+    {path: '/Article16', name: 'Articolul 16', Component: Article16},
+    {path: '/Article17', name: 'Articolul 17', Component: Article17},
+    {path: '/Article18', name: 'Articolul 18', Component: Article18},
+    {path: '/Article19', name: 'Articolul 19', Component: Article19},
+    {path: '/Article20', name: 'Articolul 20', Component: Article20},
+    {path: '/Article21', name: 'Articolul 21', Component: Article21},
+    {path: '/Article22', name: 'Articolul 22', Component: Article22},
+    {path: '/Article23', name: 'Articolul 23', Component: Article23},
+    {path: '/Article24', name: 'Articolul 24', Component: Article24},
+    {path: '/Article25', name: 'Articolul 25', Component: Article25},
+    {path: '/Article26', name: 'Articolul 26', Component: Article26},
 ];
 
 function App() {
@@ -51,10 +75,11 @@ function App() {
                                 <CSSTransition
                                     classNames={{
                                         enter: 'animated',
-                                        enterActive: 'zoomIn width100vw',
+                                        enterActive: 'zoomIn width100',
                                         exit: 'displayNone',
                                     }}
-                                    onEnter={() => window.scrollTo(0, 0)}
+                                    onEnter={() => {window.scrollTo(0, 0); document.documentElement.className='noScrollSnap';}}
+                                    onEntered={() => document.documentElement.className=''}
                                     in={match != null}
                                     timeout={1000}
                                     unmountOnExit
