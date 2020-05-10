@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/covid-19-website/static/css/main.c43c1ddf.chunk.css",
-    "main.js": "/covid-19-website/static/js/main.07a0d4dc.chunk.js",
-    "main.js.map": "/covid-19-website/static/js/main.07a0d4dc.chunk.js.map",
+    "main.css": "/covid-19-website/static/css/main.93ea902f.chunk.css",
+    "main.js": "/covid-19-website/static/js/main.b4a8517c.chunk.js",
+    "main.js.map": "/covid-19-website/static/js/main.b4a8517c.chunk.js.map",
     "runtime-main.js": "/covid-19-website/static/js/runtime-main.6b03faff.js",
     "runtime-main.js.map": "/covid-19-website/static/js/runtime-main.6b03faff.js.map",
     "static/css/2.ac75b6f8.chunk.css": "/covid-19-website/static/css/2.ac75b6f8.chunk.css",
-    "static/js/2.57650595.chunk.js": "/covid-19-website/static/js/2.57650595.chunk.js",
-    "static/js/2.57650595.chunk.js.map": "/covid-19-website/static/js/2.57650595.chunk.js.map",
+    "static/js/2.a243e206.chunk.js": "/covid-19-website/static/js/2.a243e206.chunk.js",
+    "static/js/2.a243e206.chunk.js.map": "/covid-19-website/static/js/2.a243e206.chunk.js.map",
     "index.html": "/covid-19-website/index.html",
-    "precache-manifest.6d3df28aa41d3082607e05bec347c568.js": "/covid-19-website/precache-manifest.6d3df28aa41d3082607e05bec347c568.js",
+    "precache-manifest.f9fb5623146697dff3e27347486f9ae0.js": "/covid-19-website/precache-manifest.f9fb5623146697dff3e27347486f9ae0.js",
     "service-worker.js": "/covid-19-website/service-worker.js",
     "static/css/2.ac75b6f8.chunk.css.map": "/covid-19-website/static/css/2.ac75b6f8.chunk.css.map",
-    "static/css/main.c43c1ddf.chunk.css.map": "/covid-19-website/static/css/main.c43c1ddf.chunk.css.map",
-    "static/js/2.57650595.chunk.js.LICENSE.txt": "/covid-19-website/static/js/2.57650595.chunk.js.LICENSE.txt",
+    "static/css/main.93ea902f.chunk.css.map": "/covid-19-website/static/css/main.93ea902f.chunk.css.map",
+    "static/js/2.a243e206.chunk.js.LICENSE.txt": "/covid-19-website/static/js/2.a243e206.chunk.js.LICENSE.txt",
     "static/media/Start.css": "/covid-19-website/static/media/background-tile(1).bbe18a41.png",
     "static/media/index.css": "/covid-19-website/static/media/raleway-regular-webfont.fcc3a3ec.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.6b03faff.js",
     "static/css/2.ac75b6f8.chunk.css",
-    "static/js/2.57650595.chunk.js",
-    "static/css/main.c43c1ddf.chunk.css",
-    "static/js/main.07a0d4dc.chunk.js"
+    "static/js/2.a243e206.chunk.js",
+    "static/css/main.93ea902f.chunk.css",
+    "static/js/main.b4a8517c.chunk.js"
   ]
 }
